@@ -1,0 +1,84 @@
+.cell {
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
+  margin: auto;
+
+  /* position: relative; */
+
+  border-radius: 8px;
+
+  background-color: lightgrey;
+}
+
+.cross {
+}
+
+.circle {
+}
+
+.cross:before,
+.cross:after {
+  width: 62px;
+  height: 15px;
+
+  position: relative;
+
+  border-radius: 10px;
+
+  background: grey;
+}
+
+.cell:before,
+.cell:after {
+  display: block;
+  content: '';
+
+  position: relative;
+
+  transition: 0.8s ease-out;
+}
+
+.cross:before {
+  top: 32px;
+  left: 9px;
+
+  transform: rotate(45deg);
+}
+
+.cross:after {
+  top: 18px;
+  left: 9px;
+
+  transform: rotate(-45deg);
+}
+
+.circle:before {
+  width: 60px;
+  height: 60px;
+
+  top: 10px;
+  left: 10px;
+
+  border-radius: 100px;
+
+  background-color: grey;
+}
+
+.circle:after {
+  width: 40px;
+  height: 40px;
+
+  top: -40px;
+  left: 20px;
+
+  border-radius: 100px;
+
+  background-color: lightgrey;
+}
+
+.won {
+  background-color: yellow;
+}

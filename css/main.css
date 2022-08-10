@@ -1,0 +1,15 @@
+@import 'desktop/desktop.css' (min-width: 1000px);
+@import 'mobile/mobile.css' (max-width: 100px);
+
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
